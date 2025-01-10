@@ -56,7 +56,7 @@ Competitive programming in my data science portfolio demonstrates my skills in p
 
 **Solution approach:** [Shortest path - Dantzig's algorithm (1966)](https://vjudge.net/solution/51862270/8cfpfeEB6ndL87T03xIL)
 
-## Problem 9: [My T-shirt suits me](https://vjudge.net/problem/UVA-11045)
+### Problem 9: [My T-shirt suits me](https://vjudge.net/problem/UVA-11045)
 **Description:** Victor needs to distribute N T-shirts (in 6 sizes) to M volunteers, where each volunteer can only wear two specific sizes. The goal is to determine if it's possible to distribute the T-shirts so that each volunteer receives a T-shirt in their preferred sizes, with any leftover T-shirts not affecting the distribution.
 
 **Solution approach:** [Flow network - Edmonds-Karp algorithm](https://vjudge.net/solution/53307955/lrmVU68nqRBQqmiSFlLF)
