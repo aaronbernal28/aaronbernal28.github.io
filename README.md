@@ -1,6 +1,6 @@
 # Data science portfolio by Aaron Bernal Huanca
 
-This portfolio is a compilation of notebooks which I created for data analysis and machine learning proyects, and competitive programming highlights. A separate category is for separate projects.
+This portfolio is a compilation of notebooks which I created for data analysis and machine learning proyects, also competitive programming highlights. A separate category is for separate projects.
 
 [//]: <> (## Stand-alone projects.)
 [//]: <> (### Proyect 1)
