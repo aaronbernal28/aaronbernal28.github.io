@@ -1,6 +1,6 @@
 # Data science portfolio by Aaron Bernal Huanca
 
-This portfolio is a compilation of notebooks which I created for data analysis and machine learning proyects, also competitive programming highlights. A separate category is for separate projects.
+This portfolio is a compilation of notebooks which I created for data analysis and machine learning proyects, also competitive programming highlights where I had to implement advanced algorithms in C++ such as dynamic programming, greedy strategies, graph traversal (BFS, Dijkstra), and flow networks. A separate category is for separate projects.
 
 [//]: <> (## Stand-alone projects.)
 [//]: <> (### Proyect 1)
@@ -8,8 +8,12 @@ This portfolio is a compilation of notebooks which I created for data analysis a
 
 ## Kaggle kernels
 
+### Sign Language MNIST
+This Kaggle project focuses on classifying sign language letters using the Sign Language MNIST dataset. It explores models such as Tree, Random Forest, K-Nearest Neighbors, and Support Vector Machines (SVM). Cross-validation is used to evaluate performance and address the bias-variance tradeoff. Metrics like accuracy and confusion matrices help compare model effectiveness. The notebook is fully written in Spanish.
+[Notebook](https://www.kaggle.com/code/aarnbernal/sign-language-mnist)
+
 ### Internet auction in US Schools
-This project is an implementation in Python of the model from the paper [An asymmetric multi-item auction with quantity discounts applied to Internet service procurement in Buenos Aires public schools](https://doi.org/10.1007/s10479-016-2164-x), which focuses on linear programming. Since the actual 91,063 schools in the US are provided, I created six fictional firms for educational purposes, along with their respective discount and unit prices. [kernel](https://www.kaggle.com/code/aarnbernal/internet-auction-in-us-schools)
+This project is an implementation in Python of the model from the paper [An asymmetric multi-item auction with quantity discounts applied to Internet service procurement in Buenos Aires public schools](https://doi.org/10.1007/s10479-016-2164-x), which focuses on linear programming. Since the actual 91,063 schools in the US are provided, I created six fictional firms for educational purposes, along with their respective discount and unit prices. [Notebook](https://www.kaggle.com/code/aarnbernal/internet-auction-in-us-schools)
 
 ## Competitive programming highlights
 
