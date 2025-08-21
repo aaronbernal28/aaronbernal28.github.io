@@ -2,18 +2,40 @@
 
 This portfolio is a compilation of notebooks which I created for data analysis and machine learning proyects, also competitive programming highlights where I had to implement advanced algorithms in C++ such as dynamic programming, greedy strategies, graph traversal (BFS, Dijkstra), and flow networks. A separate category is for separate projects.
 
-[//]: <> (## Stand-alone projects.)
-[//]: <> (### Proyect 1)
-[//]: <> (text)
+## Proyects
 
-## Kaggle kernels
+### TP2: Mixed models, penalized splines, and causality
+In this project we analyze 4,000 movies and series from a streaming platform to predict IMDb ratings using statistical modeling. We explore data patterns by genre, people, and text features, apply mixed-effects models and penalized splines, and use causal inference with DAGs. Finally, we compare several predictive models, with logistic regression achieving the best performance. The work combines exploratory analysis, causal reasoning, and prediction in a group effort. <br>
+**Authors**: Aaron Bernal Huanca, Casiel Joshua Estrago, Ramiro Lipszyc <br>
+[Statement (spanish)]() <br>
+[Report (spanish)]()
+
+### Classification of Gene Expression
+This report uses 500 RNA samples from 200 genes, taken from patients with pre-tumoral lesions, which we analyzed with various machine learning techniques. The data were provided by research groups from CONICET (and faculty from the department) as part of an interdisciplinary project on hyperplasias and oncological prognosis. The goal is to train models that help predict new cases in a precise and automatic way. Each sample was labeled as good prognosis if there were no signs of new hyperplasias or similar conditions; conversely, they were labeled as poor prognosis if a relapse occurred.<br>
+**Authors**: Manuel Fernandez Burda, Santiago Nahuel Eliges, Giancarlo Moroni, Nicolas Spisso, Aaron Bernal Huanca<br>
+[Report (spanish)]()
+
+### IECD 2C2024 - Practical Assignment
+In this report we study the Wilcoxon signed-rank test, a nonparametric method to test hypotheses about the median of symmetric distributions. First, we review basic ideas of object-oriented programming in R (S3 system) in order to implement a version of the test compatible with the native wilcox.test. Then, we describe the construction of the statistic, its exact and asymptotic distributions, and how to compute it efficiently for larger samples. Finally, we use bootstrap methods to estimate the power of the test under alternatives. The work combines theory, programming practice, and applications, showing how R can be used to understand and implement statistical methods.<br>
+**Authors**: Aaron Bernal Huanca, Nicolas Spisso, Marina Badaracco <br>
+[Statement (spanish)]() <br>
+[Report (spanish)]()
+
+## Stand-alone projects.
+
+### Final Project - DeepMusicGenreClassifier
+This report addresses the classification of musical genres using the GTZAN dataset (10 genres, 100 songs of 30 seconds each). The objective is to analyze and classify music employing different neural network architectures. Methods implemented include sequential processing with RNNs, spectrogram analysis (Mel, MFCC, CQT) with 1D CNNs, and the use of pre-trained neural networks for extracting relevant features (transfer learning) such as Wav2vec2 and EnCodecMAE. Cross-entropy and accuracy are used as evaluation criteria to determine which of these architectures achieves the best performance in the classification task. <br>
+[Report]()<br>
+[Report (spanish)](https://github.com/aaronbernal28/DeepMusicGenreClassifier/blob/7a93485d191dd292acc010750424d847092432f1/Informe_PSAH_bernal.pdf)<br>
+[Repository](https://github.com/aaronbernal28/DeepMusicGenreClassifier)
 
 ### Sign Language MNIST
-This Kaggle project focuses on classifying sign language letters using the Sign Language MNIST dataset. It explores models such as Tree, Random Forest, K-Nearest Neighbors, and Support Vector Machines (SVM). Cross-validation is used to evaluate performance and address the bias-variance tradeoff. Metrics like accuracy and confusion matrices help compare model effectiveness. The notebook is fully written in Spanish.
+This Kaggle project focuses on classifying sign language letters using the Sign Language MNIST dataset. It explores models such as Tree, Random Forest, K-Nearest Neighbors, and Support Vector Machines (SVM). Cross-validation is used to evaluate performance and address the bias-variance tradeoff. Metrics like accuracy and confusion matrices help compare model effectiveness. The notebook is fully written in Spanish. <br>
 [Notebook](https://www.kaggle.com/code/aarnbernal/sign-language-mnist)
 
 ### Internet auction in US Schools
-This project is an implementation in Python of the model from the paper [An asymmetric multi-item auction with quantity discounts applied to Internet service procurement in Buenos Aires public schools](https://doi.org/10.1007/s10479-016-2164-x), which focuses on linear programming. Since the actual 91,063 schools in the US are provided, I created six fictional firms for educational purposes, along with their respective discount and unit prices. [Notebook](https://www.kaggle.com/code/aarnbernal/internet-auction-in-us-schools)
+This project is an implementation in Python of the model from the paper [An asymmetric multi-item auction with quantity discounts applied to Internet service procurement in Buenos Aires public schools](https://doi.org/10.1007/s10479-016-2164-x), which focuses on linear programming. Since the actual 91,063 schools in the US are provided, I created six fictional firms for educational purposes, along with their respective discount and unit prices. <br>
+[Notebook](https://www.kaggle.com/code/aarnbernal/internet-auction-in-us-schools)
 
 ## Competitive programming highlights
 
