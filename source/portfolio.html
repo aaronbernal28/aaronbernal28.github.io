@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)file:///C:/Users/aaron/Documents/aaronbernal28.github.io/portfolio.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron Bernal Huanca - Data Science Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 2rem 0;
+            margin-bottom: 3rem;
+            border-radius: 0 0 30px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .header .subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            font-weight: 300;
+        }
+
+        /* Navigation */
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .nav-item {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-item:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Section styling */
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            margin-bottom: 3rem;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #333;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        /* Project cards */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #f0f0f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(45deg, #f0f2f5, #e1e7ed);
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #667eea;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-image::after {
+            content: '📊';
+            position: absolute;
+        }
+
+        .project-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+            font-weight: 700;
+        }
+
+        .project-card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .authors {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .project-link {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .project-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Competitive programming section */
+        .cp-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .cp-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-left: 4px solid #667eea;
+        }
+
+        .cp-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .cp-card h4 {
+            color: #333;
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+        }
+
+        .cp-card p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .algorithm-tag {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .cp-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        .cp-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Profile link */
+        .profile-link {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .profile-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section {
+                padding: 2rem;
+                margin-bottom: 2rem;
+            }
+            
+            .section h2 {
+                font-size: 2rem;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cp-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav {
+                gap: 1rem;
+            }
+        }
+
+        /* Special icons for different project types */
+        .project-card[data-type="ml"] .project-image::after { content: '🤖'; }
+        .project-card[data-type="stats"] .project-image::after { content: '📊'; }
+        .project-card[data-type="bio"] .project-image::after { content: '🧬'; }
+        .project-card[data-type="music"] .project-image::after { content: '🎵'; }
+        .project-card[data-type="vision"] .project-image::after { content: '🤟👌✋'; }
+        .project-card[data-type="optimization"] .project-image::after { content: '🛜'; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>Aaron Bernal Huanca</h1>
+            <p class="subtitle">Data Science &amp; Machine Learning Portfolio</p>
+            <p style="text-align: center; margin-top: 1.5rem; font-size: 1rem; color: #555; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+                This portfolio is a compilation of notebooks which I created for data analysis and machine learning proyects, also competitive programming highlights where I had to implement advanced algorithms in C++ such as dynamic programming, greedy strategies, graph traversal (BFS, Dijkstra), and flow networks. A separate category is for separate projects.
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <nav class="nav">
+            <a href="file:///C:/Users/aaron/Documents/aaronbernal28.github.io/portfolio.html#projects" class="nav-item">Projects</a>
+            <a href="file:///C:/Users/aaron/Documents/aaronbernal28.github.io/portfolio.html#standalone" class="nav-item">Stand-alone Work</a>
+            <a href="file:///C:/Users/aaron/Documents/aaronbernal28.github.io/portfolio.html#competitive" class="nav-item">Competitive Programming</a>
+            <a href="https://www.linkedin.com/in/aaronbernal28/" class="nav-item" target="_blank">LinkedIn</a>
+        </nav>
+
+        <section id="projects" class="section" style="opacity: 1; transform: translateY(0px);">
+            <h2>Academic Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-type="stats" style="transform: translateY(0px) scale(1);">
+                    <div class="project-image"></div>
+                    <h3>Mixed Models &amp; Causal Inference</h3>
+                    <p>In this project we analyze 4,000 movies and series from a streaming platform to predict IMDb ratings using statistical modeling. We explore data patterns by genre, people, and text features, apply mixed-effects models and penalized splines, and use causal inference with DAGs. Finally, we compare several predictive models, with logistic regression achieving the best performance. The work combines exploratory analysis, causal reasoning, and prediction in a group effort.</p>
+                    <div class="authors">Authors: Aaron Bernal Huanca, Casiel Joshua Estrago, Ramiro Lipszyc</div>
+                    <div class="project-links">
+                        <a href="https://github.com/aaronbernal28/aaronbernal28.github.io/blob/b4360871a788b9b4fc5833c4e30fc9d119c9572f/reports/informe_TP2.pdf" class="project-link">Report (Spanish)</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-type="bio" style="transform: translateY(0px) scale(1);">
+                    <div class="project-image"></div>
+                    <h3>Classification of Gene Expression</h3>
+                    <p>This report uses 500 RNA samples from 200 genes, taken from patients with pre-tumoral lesions, which we analyzed with various machine learning techniques. The data were provided by research groups from CONICET (and faculty from the department) as part of an interdisciplinary project on hyperplasias and oncological prognosis. The goal is to train models that help predict new cases in a precise and automatic way. Each sample was labeled as good prognosis if there were no signs of new hyperplasias or similar conditions; conversely, they were labeled as poor prognosis if a relapse occurred.</p>
+                    <div class="authors">Authors: Manuel Fernandez Burda, Santiago Nahuel Eliges, Giancarlo Moroni, Nicolas Spisso, Aaron Bernal Huanca</div>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/1o3kq4J8i0jMBt8mDWLyuVQ5VTc-W795W/view?usp=sharing" class="project-link">Report (Spanish)</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-type="stats" style="transform: translateY(0px) scale(1);">
+                    <div class="project-image"></div>
+                    <h3>IECD 2C2024 - Practical Assignment</h3>
+                    <p>In this report we study the Wilcoxon signed-rank test, a nonparametric method to test hypotheses about the median of symmetric distributions. First, we review basic ideas of object-oriented programming in R (S3 system) in order to implement a version of the test compatible with the native wilcox.test. Then, we describe the construction of the statistic, its exact and asymptotic distributions, and how to compute it efficiently for larger samples. Finally, we use bootstrap methods to estimate the power of the test under alternatives. The work combines theory, programming practice, and applications, showing how R can be used to understand and implement statistical methods.</p>
+                    <div class="authors">Authors: Aaron Bernal Huanca, Nicolas Spisso, Marina Badaracco</div>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/1zC2OzRBSgIApm09ChP9tCHJvfGvjtaqh/view?usp=sharing" class="project-link">Statement (Spanish)</a>
+                        <a href="https://drive.google.com/file/d/1mNRLZLcxYUR-iNTL-R0HPEitANBQtkPC/view?usp=sharing" class="project-link">Report (Spanish)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="standalone" class="section" style="opacity: 1; transform: translateY(0px);">
+            <h2>Stand-alone Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-type="music" style="transform: translateY(0px) scale(1);">
+                    <div class="project-image"></div>
+                    <h3>DeepMusicGenreClassifier</h3>
+                    <p>This report addresses the classification of musical genres using the GTZAN dataset (10 genres, 100 songs of 30 seconds each). The objective is to analyze and classify music employing different neural network architectures. Methods implemented include sequential processing with RNNs, spectrogram analysis (Mel, MFCC, CQT) with 1D CNNs, and the use of pre-trained neural networks for extracting relevant features (transfer learning) such as Wav2vec2 and EnCodecMAE. Cross-entropy and accuracy are used as evaluation criteria to determine which of these architectures achieves the best performance in the classification task.</p>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/1XE_I1uaKtk1UVR3KdBVfysUpUKZOANTS/view?usp=sharing" class="project-link">Report (English)</a>
+                        <a href="https://github.com/aaronbernal28/DeepMusicGenreClassifier/blob/7a93485d191dd292acc010750424d847092432f1/Informe_PSAH_bernal.pdf" class="project-link">Report (Spanish)</a><a href="https://github.com/aaronbernal28/DeepMusicGenreClassifier" class="project-link">Repository</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-type="vision" style="transform: translateY(0px) scale(1);">
+                    <div class="project-image"></div>
+                    <h3>Sign Language MNIST</h3>
+                    <p>This Kaggle project focuses on classifying sign language letters using the Sign Language MNIST dataset. It explores models such as Tree, Random Forest, K-Nearest Neighbors, and Support Vector Machines (SVM). Cross-validation is used to evaluate performance and address the bias-variance tradeoff. Metrics like accuracy and confusion matrices help compare model effectiveness. The notebook is fully written in Spanish.</p>
+                    <div class="project-links">
+                        <a href="https://www.kaggle.com/code/aarnbernal/sign-language-mnist" class="project-link">Kaggle Notebook</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-type="optimization" style="transform: translateY(0px) scale(1);">
+                    <div class="project-image"></div>
+                    <h3>Internet auction in US Schools</h3>
+                    <p>This project is an implementation in Python of the model from the paper *An asymmetric multi-item auction with quantity discounts applied to Internet service procurement in Buenos Aires public schools*, which focuses on linear programming. Since the actual 91,063 schools in the US are provided, I created six fictional firms for educational purposes, along with their respective discount and unit prices.</p>
+                    <div class="project-links">
+                        <a href="https://www.kaggle.com/code/aarnbernal/internet-auction-in-us-schools" class="project-link">Kaggle Notebook</a>
+
+</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competitive" class="section" style="opacity: 1; transform: translateY(0px);">
+            <h2>Competitive Programming Highlights</h2>
+            <p style="margin-bottom: 2rem; color: #666; text-align: center;">
+                Competitive programming in my data science portfolio demonstrates my skills in problem-solving, logical thinking, and optimization. It shows my ability to write efficient code and tackle complex challenges effectively. The platform is Vjudge.
+            </p>
+            
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <a href="https://vjudge.net/user/aaron_bernal" class="project-link" target="_blank" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 0.8rem 1.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block;">
+                    View Vjudge Profile
+                </a>
+            </div>
+
+            <div class="cp-grid">
+                <div class="cp-card">
+                    <h4>Argentina - Team Selection</h4>
+                    <p>The task is to select 5 attackers and 5 defenders from a list of 10 players based on their attacking and defensive abilities. The goal is to maximize the sum of the attackers' abilities.</p>
+                    <div class="algorithm-tag">Backtracking</div>
+                    <a href="https://vjudge.net/solution/50555912/DUjEFQ2r9EikgZdmi5gl" class="cp-link" target="_blank">View Solution</a>
+                </div>
+
+                <div class="cp-card">
+                    <h4>ACORN - Flying Squirrel</h4>
+                    <p>Jayjay, the flying squirrel, descends from an oak tree, collecting acorns along the way. He can either climb down or fly to another tree, losing height with each flight. The goal is to compute the maximum acorns he can collect, given the number of trees, their acorn counts, and the height lost per flight.</p>
+                    <div class="algorithm-tag">Dynamic Programming</div>
+                    <a href="https://vjudge.net/solution/50555998/JoXZzl5GpxC8CJVxv9FN" class="cp-link" target="_blank">View Solution</a>
+                </div>
+
+                <div class="cp-card">
+                    <h4>Equivalent Strings</h4>
+                    <p>Two strings are equivalent if they are identical or can be split into two halves where each half matches directly or after swapping. The task is to check if two given strings are equivalent.</p>
+                    <div class="algorithm-tag">Divide &amp; Conquer</div>
+                    <a href="https://vjudge.net/solution/50690686/EkVrOSRbFNVtlQyggX96" class="cp-link" target="_blank">View Solution</a>
+                </div>
+
+                <div class="cp-card">
+                    <h4>Wine Trading in Gergovia</h4>
+                    <p>In Gergovia, each inhabitant buys or sells wine along a street, with supply and demand always balanced. The task is to calculate the minimum work required to transport wine between houses, where moving a bottle between adjacent houses costs one unit of work. Input consists of multiple test cases.</p>
+                    <div class="algorithm-tag">Greedy Algorithm</div>
+                    <a href="https://vjudge.net/solution/50882918/74NhAgRkjQJoHaAecm4s" class="cp-link" target="_blank">View Solution</a>
+                </div>
+
+                <div class="cp-card">
+                    <h4>The New Villa</h4>
+                    <p>Mr. Black needs to navigate his villa, starting in the hallway with only its light on, and reach his bedroom while switching off all other lights. The challenge is to determine the shortest path, considering room connections and light switches.</p>
+                    <div class="algorithm-tag">BFS</div>
+                    <a href="https://vjudge.net/solution/53216512/xBdtX0xkkEhlLW7dZqkI" class="cp-link" target="_blank">View Solution</a>
+                </div>
+
+                <div class="cp-card">
+                    <h4>Anti Brute Force Lock</h4>
+                    <p>In Panda Land, safes use a 4-digit rolling lock with multiple keys. The challenge is to unlock all keys with the minimum number of rolls, starting from 0000. The safe can use a "JUMP" button to quickly switch to any unlocked key. The goal is to calculate the least number of rolls required to unlock all keys.</p>
+                    <div class="algorithm-tag">MST</div>
+                    <a href="https://vjudge.net/solution/51559789/nPGSzMxUaLYUVgdRgKWh" class="cp-link" target="_blank">View Solution</a>
+                </div>
+
+                <div class="cp-card">
+                    <h4>Lift Hopping</h4>
+                    <p>In a skyscraper with up to 5 elevators, each traveling at different speeds, the goal is to find the minimum time required to get from floor 0 to floor k. Elevators may not stop at all floors, and switching between elevators takes 60 seconds.</p>
+                    <div class="algorithm-tag">Dijkstra's Algorithm</div>
+                    <a href="https://vjudge.net/solution/51666430/SGWzRqQbBXR3B6TuU5zb" class="cp-link" target="_blank">View Solution</a>
+                </div>
+
+                <div class="cp-card">
+                    <h4>Geonosis Fortress</h4>
+                    <p>The Galactic Empire's fortress on Geonosis consists of communication towers connected by power lines, each with a cost. The Rebels need to destroy the towers in a specific order. The power required to destroy each tower is the sum of minimum energy costs to communicate between all remaining towers. The goal is to calculate the total power needed for the mission as towers are sequentially destroyed.</p>
+                    <div class="algorithm-tag">Dantzig's Algorithm</div>
+                    <a href="https://vjudge.net/solution/51862270/8cfpfeEB6ndL87T03xIL" class="cp-link" target="_blank">View Solution</a>
+                </div>
+
+                <div class="cp-card">
+                    <h4>T-shirt Distribution</h4>
+                    <p>Victor needs to distribute N T-shirts (in 6 sizes) to M volunteers, where each volunteer can only wear two specific sizes. The goal is to determine if it's possible to distribute the T-shirts so that each volunteer receives a T-shirt in their preferred sizes, with any leftover T-shirts not affecting the distribution.</p>
+                    <div class="algorithm-tag">Edmonds-Karp</div>
+                    <a href="https://vjudge.net/solution/53307955/lrmVU68nqRBQqmiSFlLF" class="cp-link" target="_blank">View Solution</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Add smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.opacity = '0';
+            observer.observe(section);
+        });
+
+        // Add hover effects for project cards
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-8px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+
+</body></html>
