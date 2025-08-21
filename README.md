@@ -7,19 +7,18 @@ This portfolio is a compilation of notebooks which I created for data analysis a
 ### TP2: Mixed models, penalized splines, and causality
 In this project we analyze 4,000 movies and series from a streaming platform to predict IMDb ratings using statistical modeling. We explore data patterns by genre, people, and text features, apply mixed-effects models and penalized splines, and use causal inference with DAGs. Finally, we compare several predictive models, with logistic regression achieving the best performance. The work combines exploratory analysis, causal reasoning, and prediction in a group effort. <br>
 **Authors**: Aaron Bernal Huanca, Casiel Joshua Estrago, Ramiro Lipszyc <br>
-[Statement (spanish)]() <br>
-[Report (spanish)]()
+[Report (spanish)](https://github.com/aaronbernal28/aaronbernal28.github.io/blob/b4360871a788b9b4fc5833c4e30fc9d119c9572f/reports/informe_TP2.pdf)
 
 ### Classification of Gene Expression
 This report uses 500 RNA samples from 200 genes, taken from patients with pre-tumoral lesions, which we analyzed with various machine learning techniques. The data were provided by research groups from CONICET (and faculty from the department) as part of an interdisciplinary project on hyperplasias and oncological prognosis. The goal is to train models that help predict new cases in a precise and automatic way. Each sample was labeled as good prognosis if there were no signs of new hyperplasias or similar conditions; conversely, they were labeled as poor prognosis if a relapse occurred.<br>
 **Authors**: Manuel Fernandez Burda, Santiago Nahuel Eliges, Giancarlo Moroni, Nicolas Spisso, Aaron Bernal Huanca<br>
-[Report (spanish)]()
+[Report (spanish)](https://github.com/aaronbernal28/aaronbernal28.github.io/blob/b4360871a788b9b4fc5833c4e30fc9d119c9572f/reports/informe08.pdf)
 
 ### IECD 2C2024 - Practical Assignment
 In this report we study the Wilcoxon signed-rank test, a nonparametric method to test hypotheses about the median of symmetric distributions. First, we review basic ideas of object-oriented programming in R (S3 system) in order to implement a version of the test compatible with the native wilcox.test. Then, we describe the construction of the statistic, its exact and asymptotic distributions, and how to compute it efficiently for larger samples. Finally, we use bootstrap methods to estimate the power of the test under alternatives. The work combines theory, programming practice, and applications, showing how R can be used to understand and implement statistical methods.<br>
 **Authors**: Aaron Bernal Huanca, Nicolas Spisso, Marina Badaracco <br>
-[Statement (spanish)]() <br>
-[Report (spanish)]()
+[Statement (spanish)](https://github.com/aaronbernal28/aaronbernal28.github.io/blob/b4360871a788b9b4fc5833c4e30fc9d119c9572f/reports/tp-iecd-2c2024-v6.pdf) <br>
+[Report (spanish)](https://github.com/aaronbernal28/aaronbernal28.github.io/blob/b4360871a788b9b4fc5833c4e30fc9d119c9572f/reports/informe-Bernal-Spisso-Badaracco.pdf)
 
 ## Stand-alone projects.
 
