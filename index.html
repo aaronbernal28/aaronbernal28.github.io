@@ -324,6 +324,7 @@
         .project-card[data-type="music"] .project-image::after { content: '🎵'; }
         .project-card[data-type="vision"] .project-image::after { content: '🤟👌✋'; }
         .project-card[data-type="optimization"] .project-image::after { content: '🛜'; }
+        .project-card[data-type="logistics"] .project-image::after { content: '🚚'; }
     </style>
 </head>
 <body>
@@ -341,13 +342,24 @@
         <nav class="nav">
             <a href="#projects" class="nav-item">Projects</a>
             <a href="#standalone" class="nav-item">Stand-alone Work</a>
-            <a href="#competitive" class="nav-item">Competitive Programming</a>
+            <a href="https://github.com/aaronbernal28" class="nav-item" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/in/aaronbernal28/" class="nav-item" target="_blank">LinkedIn</a>
         </nav>
 
         <section id="projects" class="section" style="opacity: 1; transform: translateY(0px);">
             <h2>Projects</h2>
             <div class="projects-grid">
+                <div class="project-card" data-type="logistics" style="transform: translateY(0px) scale(1);">
+                    <div class="project-image"></div>
+                    <h3>Shelf Selection Optimization</h3>
+                    <p>This report presents the development of an optimization system for the Shelf Selection (SS) module within a Warehouse Execution System (WES). The objective is to maximize efficiency in automated warehouse picking operations through intelligent selection of shelves (racks) that minimize robot movements and maximize pick density per face. The work was organized into five phases: formal problem analysis, data exploration, architecture design, algorithmic proposal, and metrics implementation. A greedy heuristic algorithm based on max-heap was developed that successfully satisfies the system's temporal constraints.</p>
+                    <div class="authors">Authors: Santiago Oviedo, Matías Federico, Aaron Bernal Huanca</div>
+                    <div class="project-links">
+                        <a href="" class="project-link">Report (Spanish)</a>
+                        <a href="https://github.com/aaronbernal28/Shellect" class="project-link">Repository</a>
+                    </div>
+                </div>
+
                 <div class="project-card" data-type="stats" style="transform: translateY(0px) scale(1);">
                     <div class="project-image"></div>
                     <h3>Mixed Models &amp; Causal Inference</h3>
