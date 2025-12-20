@@ -325,6 +325,7 @@
         .project-card[data-type="vision"] .project-image::after { content: '🤟👌✋'; }
         .project-card[data-type="optimization"] .project-image::after { content: '🛜'; }
         .project-card[data-type="logistics"] .project-image::after { content: '🚚'; }
+        .project-card[data-type="tda"] .project-image::after { content: '🌋'; }
     </style>
 </head>
 <body>
@@ -396,6 +397,16 @@
         <section id="standalone" class="section" style="opacity: 1; transform: translateY(0px);">
             <h2>Stand-alone Work</h2>
             <div class="projects-grid">
+                <div class="project-card" data-type="tda" style="transform: translateY(0px) scale(1);">
+                    <div class="project-image"></div>
+                    <h3>Earthquake detection using DTA techniques</h3>
+                    <p>This proyect presents a methodology for the automatic detection of earthquakes using Topological Data Analysis (TDA), applied to seismic activity records (at 40 Hz) from the Chilean National Seismological Network. The approach processes the signals using Takens embeddings, FPS subsampling, and persistent homology to generate topological representations that are robust against noise. The experiments performed, which include a hyperparameter search and cross-validation, demonstrate that the model achieves high discriminant performance in evaluation metrics such as AUCROC.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/aaronbernal28/seismic-signals-tda/blob/d74a5ec4fe2e2e662be0ae99d3c11190d8c37da9/Detecci%C3%B3n%20de%20terremotos%20mediante%20t%C3%A9cnicas%20de%20TDA%20-%20Google%20Slides.pdf" class="project-link"> Report (Spanish)</a>
+                        <a href="https://github.com/aaronbernal28/seismic-signals-tda" class="project-link">Repository</a>
+                    </div>
+                </div>
+
                 <div class="project-card" data-type="music" style="transform: translateY(0px) scale(1);">
                     <div class="project-image"></div>
                     <h3>DeepMusicGenreClassifier</h3>
