@@ -190,6 +190,13 @@
             font-style: italic;
         }
 
+        .date {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
         .project-links {
             display: flex;
             gap: 1rem;
@@ -327,6 +334,7 @@
         .project-card[data-type="logistics"] .project-image::after { content: '🚚'; }
         .project-card[data-type="tda"] .project-image::after { content: '🌋'; }
         .project-card[data-type="rforce"] .project-image::after { content: '🧠'; }
+        .project-card[data-type="jobs"] .project-image::after { content: '💼'; }
     </style>
 </head>
 <body>
@@ -351,11 +359,24 @@
         <section id="projects" class="section" style="opacity: 1; transform: translateY(0px);">
             <h2>Projects</h2>
             <div class="projects-grid">
+                <div class="project-card" data-type="jobs" style="transform: translateY(0px) scale(1);">
+                    <div class="project-image"></div>
+                    <h3>Analysis of Occupational and Industry Networks</h3>
+                    <p>This study applies network science techniques to analyze the structural dynamics of the Argentine labor market, utilizing data from national surveys (ENES 2019, ESAyPP 2021) and specific trajectory records from the AMBA region (PI-Clases 2016). By constructing bipartite networks between economic activities and occupations, as well as directed networks of occupational trajectories, the research reveals a polarized productive structure where the Commerce sector functions as a central bridge connecting industrial sectors with social services. The application of community detection algorithms (Louvain) identifies distinct "mobility classes" that expose significant structural barriers—specifically a rigid segmentation between manual and non-manual labor with a 78% retention rate in manual roles—along with deep-seated inequalities driven by gender and technical specialization.</p>
+                    <div class="authors">Authors: Joaquín Carrascosa (FSOC-UBA), Aaron Bernal Huanca (FCEyN-UBA)</div>
+                    <div class="date">Date: 12/2025</div>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/1fyB_jKDagcQMd1yvfySzRZ-5TkgA5OKy/view?usp=sharing" class="project-link">Report (Spanish)</a>
+                        <a href="https://colab.research.google.com/drive/1bBviDf9NQdG6LQvC7a26oVPRTFK0r1yi?usp=sharing" class="project-link">Colab</a>
+                    </div>
+                </div>
+
                 <div class="project-card" data-type="logistics" style="transform: translateY(0px) scale(1);">
                     <div class="project-image"></div>
                     <h3>Shelf Selection Optimization</h3>
                     <p>This report presents the development of an optimization system for the Shelf Selection (SS) module within a Warehouse Execution System (WES). The objective is to maximize efficiency in automated warehouse picking operations through intelligent selection of shelves (racks) that minimize robot movements and maximize pick density per face. The work was organized into five phases: formal problem analysis, data exploration, architecture design, algorithmic proposal, and metrics implementation. A greedy heuristic algorithm based on max-heap was developed that successfully satisfies the system's temporal constraints.</p>
                     <div class="authors">Authors: Santiago Oviedo, Matías Federico, Aaron Bernal Huanca</div>
+                    <div class="date">Date: 10/2025</div>
                     <div class="project-links">
                         <a href="https://drive.google.com/file/d/1fyB_jKDagcQMd1yvfySzRZ-5TkgA5OKy/view?usp=sharing" class="project-link">Report (Spanish)</a>
                         <a href="https://github.com/aaronbernal28/Shellect" class="project-link">Repository</a>
@@ -367,6 +388,7 @@
                     <h3>Mixed Models &amp; Causal Inference</h3>
                     <p>In this project we analyze 4,000 movies and series from a streaming platform to predict IMDb ratings using statistical modeling. We explore data patterns by genre, people, and text features, apply mixed-effects models and penalized splines, and use causal inference with DAGs. Finally, we compare several predictive models, with logistic regression achieving the best performance. The work combines exploratory analysis, causal reasoning, and prediction in a group effort.</p>
                     <div class="authors">Authors: Aaron Bernal Huanca, Casiel Joshua Estrago, Ramiro Lipszyc</div>
+                    <div class="date">Date: 07/2025</div>
                     <div class="project-links">
                         <a href="https://drive.google.com/file/d/1sKW0xbrYGKWCmO8RBLMDTKkwiYOML2DI/view?usp=sharing" class="project-link">Report (Spanish)</a>
                     </div>
@@ -377,6 +399,7 @@
                     <h3>Classification of Gene Expression</h3>
                     <p>This report uses 500 RNA samples from 200 genes, taken from patients with pre-tumoral lesions, which we analyzed with various machine learning techniques. The data were provided by research groups from CONICET (and faculty from the department) as part of an interdisciplinary project on hyperplasias and oncological prognosis. The goal is to train models that help predict new cases in a precise and automatic way. Each sample was labeled as good prognosis if there were no signs of new hyperplasias or similar conditions; conversely, they were labeled as poor prognosis if a relapse occurred.</p>
                     <div class="authors">Authors: Manuel Fernandez Burda, Santiago Nahuel Eliges, Giancarlo Moroni, Nicolas Spisso, Aaron Bernal Huanca</div>
+                    <div class="date">Date: 05/2025</div>
                     <div class="project-links">
                         <a href="https://drive.google.com/file/d/1o3kq4J8i0jMBt8mDWLyuVQ5VTc-W795W/view?usp=sharing" class="project-link">Report (Spanish)</a>
                     </div>
@@ -387,6 +410,7 @@
                     <h3>IECD 2C2024 - Practical Assignment</h3>
                     <p>In this report we study the Wilcoxon signed-rank test, a nonparametric method to test hypotheses about the median of symmetric distributions. First, we review basic ideas of object-oriented programming in R (S3 system) in order to implement a version of the test compatible with the native wilcox.test. Then, we describe the construction of the statistic, its exact and asymptotic distributions, and how to compute it efficiently for larger samples. Finally, we use bootstrap methods to estimate the power of the test under alternatives. The work combines theory, programming practice, and applications, showing how R can be used to understand and implement statistical methods.</p>
                     <div class="authors">Authors: Aaron Bernal Huanca, Nicolas Spisso, Marina Badaracco</div>
+                    <div class="date">Date: 12/2024</div>
                     <div class="project-links">
                         <a href="https://drive.google.com/file/d/1zC2OzRBSgIApm09ChP9tCHJvfGvjtaqh/view?usp=sharing" class="project-link">Statement (Spanish)</a>
                         <a href="https://drive.google.com/file/d/1mNRLZLcxYUR-iNTL-R0HPEitANBQtkPC/view?usp=sharing" class="project-link">Report (Spanish)</a>
@@ -402,6 +426,7 @@
                     <div class="project-image"></div>
                     <h3>Earthquake detection using DTA techniques</h3>
                     <p>This proyect presents a methodology for the automatic detection of earthquakes using Topological Data Analysis (TDA), applied to seismic activity records (at 40 Hz) from the Chilean National Seismological Network. The approach processes the signals using Takens embeddings, FPS subsampling, and persistent homology to generate topological representations that are robust against noise. The experiments performed, which include a hyperparameter search and cross-validation, demonstrate that the model achieves high discriminant performance in evaluation metrics such as AUCROC.</p>
+                    <div class="date">Date: 12/2025</div>
                     <div class="project-links">
                         <a href="https://github.com/aaronbernal28/seismic-signals-tda/blob/d74a5ec4fe2e2e662be0ae99d3c11190d8c37da9/Detecci%C3%B3n%20de%20terremotos%20mediante%20t%C3%A9cnicas%20de%20TDA%20-%20Google%20Slides.pdf" class="project-link"> Report (Spanish)</a>
                         <a href="https://github.com/aaronbernal28/seismic-signals-tda" class="project-link">Repository</a>
@@ -412,6 +437,7 @@
                     <div class="project-image"></div>
                     <h3>Analysis of DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning</h3>
                     <p>This study examines the development of DeepSeek-R1-Zero and DeepSeek-R1, focusing on incentivizing reasoning in Large Language Models (LLMs) through Reinforcement Learning (RL). By implementing the Group Relative Policy Optimization (GRPO) algorithm, the methodology eliminates the need for a traditional value function, significantly reducing training resources while improving performance in STEM tasks. The results show an emergent "self-evolution" process where the model autonomously learns to generate longer reasoning chains and self-correct, achieving results comparable to state-of-the-art proprietary models.</p>
+                    <div class="date">Date: 11/2025</div>
                     <div class="project-links">
                         <a href="https://drive.google.com/file/d/1gAkHEbpspikI4UfdlTQnjVQkfw55lwFY/view?usp=sharing" class="project-link"> Poster (Spanish)</a>
                     </div>
@@ -421,6 +447,7 @@
                     <div class="project-image"></div>
                     <h3>DeepMusicGenreClassifier</h3>
                     <p>This report addresses the classification of musical genres using the GTZAN dataset (10 genres, 100 songs of 30 seconds each). The objective is to analyze and classify music employing different neural network architectures. Methods implemented include sequential processing with RNNs, spectrogram analysis (Mel, MFCC, CQT) with 1D CNNs, and the use of pre-trained neural networks for extracting relevant features (transfer learning) such as Wav2vec2 and EnCodecMAE. Cross-entropy and accuracy are used as evaluation criteria to determine which of these architectures achieves the best performance in the classification task.</p>
+                    <div class="date">Date: 08/2025</div>
                     <div class="project-links">
                         <a href="https://drive.google.com/file/d/1XE_I1uaKtk1UVR3KdBVfysUpUKZOANTS/view?usp=sharing" class="project-link">Report (English)</a>
                         <a href="https://github.com/aaronbernal28/DeepMusicGenreClassifier/blob/7a93485d191dd292acc010750424d847092432f1/Informe_PSAH_bernal.pdf" class="project-link">Report (Spanish)</a><a href="https://github.com/aaronbernal28/DeepMusicGenreClassifier" class="project-link">Repository</a>
@@ -431,6 +458,7 @@
                     <div class="project-image"></div>
                     <h3>Sign Language MNIST</h3>
                     <p>This Kaggle project focuses on classifying sign language letters using the Sign Language MNIST dataset. It explores models such as Tree, Random Forest, K-Nearest Neighbors, and Support Vector Machines (SVM). Cross-validation is used to evaluate performance and address the bias-variance tradeoff. Metrics like accuracy and confusion matrices help compare model effectiveness. The notebook is fully written in Spanish.</p>
+                    <div class="date">Date: 04/2025</div>
                     <div class="project-links">
                         <a href="https://www.kaggle.com/code/aarnbernal/sign-language-mnist" class="project-link">Kaggle Notebook</a>
                     </div>
@@ -440,6 +468,7 @@
                     <div class="project-image"></div>
                     <h3>Internet auction in US Schools</h3>
                     <p>This project is an implementation in Python of the model from the paper *An asymmetric multi-item auction with quantity discounts applied to Internet service procurement in Buenos Aires public schools*, which focuses on linear programming. Since the actual 91,063 schools in the US are provided, I created six fictional firms for educational purposes, along with their respective discount and unit prices.</p>
+                    <div class="date">Date: 12/2024</div>
                     <div class="project-links">
                         <a href="https://www.kaggle.com/code/aarnbernal/internet-auction-in-us-schools" class="project-link">Kaggle Notebook</a>
 
@@ -451,7 +480,7 @@
         <section id="competitive" class="section" style="opacity: 1; transform: translateY(0px);">
             <h2>Competitive Programming Highlights</h2>
             <p style="margin-bottom: 2rem; color: #666; text-align: center;">
-                Competitive programming in my data science portfolio demonstrates my skills in problem-solving, logical thinking, and optimization. It shows my ability to write efficient code and tackle complex challenges effectively. The platform is Vjudge.
+                Competitive programming in my data science portfolio demonstrates my skills in problem-solving, logical thinking, and optimization. It shows my ability to write efficient code and tackle complex challenges effectively. The platform is Vjudge. Date: first half of 2024.
             </p>
             
             <div style="text-align: center; margin-bottom: 2rem;">
