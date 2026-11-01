@@ -1,0 +1,1035 @@
+[
+  {
+    "id": "labor-market-simulation-sipa",
+    "category": "networks",
+    "status": "ongoing",
+    "featured": true,
+    "isPublication": false,
+    "date": "2026-10",
+    "title": {
+      "en": "SIPA Longitudinal Labor Market & Mobility Network Simulation",
+      "es": "Simulación del Mercado Laboral y Redes de Movilidad sobre Microdatos SIPA"
+    },
+    "description": {
+      "en": "Ongoing research simulation of occupational dynamics in the Argentine registered labor market based on the topological relations from JAIIO 2026 and longitudinal microdata from the Muestra Longitudinal de Empleo Registrado (MLER / SIPA). Built with a reproducible 3-tier Snakemake pipeline and strict schema validation.",
+      "es": "Simulación en curso de la dinámica ocupacional en el mercado laboral registrado argentino basada en las relaciones topológicas de JAIIO 2026 y microdatos de la Muestra Longitudinal de Empleo Registrado (MLER / SIPA). Construida con un pipeline reproducible en Snakemake."
+    },
+    "authors": [
+      "Aaron Bernal Huanca (FCEyN-UBA)"
+    ],
+    "techStack": [
+      "Python",
+      "Snakemake",
+      "Network Simulation",
+      "MLER / SIPA",
+      "Complex Networks"
+    ],
+    "visual": {
+      "mode": "procedural",
+      "src": null,
+      "proceduralType": "bipartite-network",
+      "caption": {
+        "en": "Stochastic Occupational Mobility & Bipartite Transition Simulation (SIPA)",
+        "es": "Simulación Estocástica de Movilidad Ocupacional y Transiciones (SIPA)"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Repository",
+          "es": "Repositorio"
+        },
+        "url": "https://github.com/aaronbernal28/labor_market_simulation_sipa",
+        "type": "code"
+      },
+      {
+        "label": {
+          "en": "JAIIO Reference Paper",
+          "es": "Artículo Base JAIIO"
+        },
+        "url": "https://revistas.unlp.edu.ar/JAIIO/article/view/22171",
+        "type": "paper"
+      }
+    ]
+  },
+  {
+    "id": "jaiio-occupational-networks-2026",
+    "category": "networks",
+    "status": "completed",
+    "featured": true,
+    "isPublication": true,
+    "date": "2026-10",
+    "title": {
+      "en": "Occupational Networks: Labor Market Structure and Gender Gap in Argentina (JAIIO 2026)",
+      "es": "Redes Ocupacionales: Estructura del Mercado Laboral y Brecha de Género en Argentina (JAIIO 2026)"
+    },
+    "description": {
+      "en": "Peer-reviewed paper published at JAIIO — ASAID 2026 (Vol. 12 No. 1, pp. 60–74). Analyzes the Argentine labor market via high-resolution bipartite networks linking occupations (ISCO-08 / CIUO-08) and economic sectors (CAES 1.0) using ENES (2019) and ESAyPP (2021) microdata. Uncovers modular segmentation bridged by Commerce and demonstrates that gender segregation exhibits strong topological homophily across occupational projections.",
+      "es": "Artículo publicado en JAIIO — ASAID 2026 (Vol. 12 Nro. 1, pp. 60–74). Analiza el mercado laboral argentino mediante redes bipartitas de alta resolución que vinculan ocupaciones (CIUO-08) y ramas de actividad (CAES 1.0) con microdatos ENES (2019) y ESAyPP (2021). Revela una organización modular articulada por el Comercio y demuestra que la segregación de género posee un correlato topológico (homofilia)."
+    },
+    "authors": [
+      "Joaquín Carrascosa (CONICET-UBA)",
+      "Aaron Bernal Huanca (FCEyN-UBA)",
+      "Viktoriya Semeshenko (CONICET-UBA)",
+      "Carlos Sarraute (Disruptive Research Institute)"
+    ],
+    "techStack": [
+      "Python",
+      "NetworkX",
+      "Hidalgo Proximity",
+      "Louvain",
+      "Gender Homophily",
+      "JAIIO-ASAID"
+    ],
+    "visual": {
+      "mode": "image",
+      "src": "assets/projects/jaiio-occupational-networks-2026.png",
+      "proceduralType": "bipartite-network",
+      "caption": {
+        "en": "Subfigure (b): Projection Network Colored by Gender Gradient (JAIIO 2026)",
+        "es": "(b) Red coloreada por género: proyección y gradiente de género (JAIIO 2026)"
+      }
+    },
+    "bibtex": "@article{Carrascosa_Bernal_Huanca_Semeshenko_Sarraute_2026,\n  title={Redes ocupacionales: estructura del mercado laboral y brecha de género en Argentina},\n  volume={12},\n  url={https://revistas.unlp.edu.ar/JAIIO/article/view/22171},\n  number={1},\n  journal={JAIIO, Jornadas Argentinas de Informática},\n  author={Carrascosa, Joaquín and Bernal Huanca, Aaron and Semeshenko, Viktoriya and Sarraute, Carlos},\n  year={2026},\n  month={Oct.},\n  pages={60--74}\n}",
+    "links": [
+      {
+        "label": {
+          "en": "JAIIO Paper",
+          "es": "Artículo JAIIO"
+        },
+        "url": "https://revistas.unlp.edu.ar/JAIIO/article/view/22171",
+        "type": "paper"
+      },
+      {
+        "label": {
+          "en": "Repository",
+          "es": "Repositorio"
+        },
+        "url": "https://github.com/aaronbernal28/occupational_networks_structure_arg",
+        "type": "code"
+      }
+    ]
+  },
+  {
+    "id": "bsc-thesis-labor-market-arg",
+    "category": "networks",
+    "status": "completed",
+    "featured": true,
+    "isPublication": true,
+    "date": "2026-08",
+    "title": {
+      "en": "Labor Market Structure in Argentina: Network Analysis of Occupational Mobility (Licenciatura Thesis)",
+      "es": "Estructura del Mercado Laboral en Argentina: Análisis de Redes y Movilidad Ocupacional (Tesis de Licenciatura)"
+    },
+    "description": {
+      "en": "Licenciatura Thesis in Data Science (FCEyN-UBA, finalized August 2026; 5-year Argentine degree equivalent to B.Sc. + thesis). Implements a reproducible Snakemake pipeline analyzing ENES 2019, ESAyPP 2021, and EPH (INDEC) survey waves. Combines Hidalgo proximity bipartite projections, Disparity Filter backbone extraction, community detection (Infomap, Leiden, Louvain), persistent homology diagram distances, UMAP embeddings, and AI occupation centrality dynamics.",
+      "es": "Tesis de Licenciatura en Ciencias de Datos (FCEyN-UBA, finalizada en agosto de 2026; carrera de grado de 5 años equivalente a B.Sc. + tesis). Implementa un pipeline reproducible en Snakemake sobre ENES 2019, ESAyPP 2021 y EPH (INDEC). Combina proyecciones bipartitas con proximidad de Hidalgo, Disparity Filter, detección de comunidades (Infomap, Leiden, Louvain), diagramas de persistencia topológica (TDA), UMAP y dinámica de centralidad en ocupaciones de IA."
+    },
+    "authors": [
+      "Aaron Bernal Huanca (FCEyN-UBA)"
+    ],
+    "techStack": [
+      "Python",
+      "Snakemake",
+      "NetworkX",
+      "Leiden / Infomap",
+      "Disparity Filter",
+      "Persistent Homology",
+      "UMAP"
+    ],
+    "visual": {
+      "mode": "image",
+      "src": "assets/projects/bsc-thesis-labor-market-arg.png",
+      "proceduralType": "bipartite-network",
+      "caption": {
+        "en": "Fig. 6.5: Modular analysis of the filtered occupational projection weighted by Hidalgo Proximity",
+        "es": "Fig. 6.5: Análisis modular de la proyección filtrada de ocupaciones ponderada por Proximidad de Hidalgo"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Zenodo DOI",
+          "es": "DOI Zenodo"
+        },
+        "url": "https://doi.org/10.5281/zenodo.21288647",
+        "type": "doi"
+      },
+      {
+        "label": {
+          "en": "Repository",
+          "es": "Repositorio"
+        },
+        "url": "https://github.com/aaronbernal28/labor_market_structure_arg/tree/v1.0.0",
+        "type": "code"
+      }
+    ]
+  },
+  {
+    "id": "earthquake-detection-tda",
+    "category": "tda-signal",
+    "status": "completed",
+    "featured": true,
+    "isPublication": false,
+    "date": "2025-12",
+    "title": {
+      "en": "Earthquake Detection via Topological Data Analysis (TDA)",
+      "es": "Detección de Terremotos mediante Análisis Topológico de Datos (TDA)"
+    },
+    "description": {
+      "en": "Automatic seismic detection methodology applying Topological Data Analysis (TDA) to 40 Hz records from the Chilean National Seismological Network. Processes waveforms using Takens delay embeddings, Farthest Point Sampling (FPS), and persistent homology to build noise-robust topological representations achieving high ROC-AUC discrimination.",
+      "es": "Metodología de detección sísmica automática aplicando Análisis Topológico de Datos (TDA) a registros de 40 Hz de la Red Sismológica Nacional de Chile. Procesa señales mediante embeddings de Takens, submuestreo FPS y homología persistente para generar representaciones topológicas robustas al ruido con alto desempeño en AUC-ROC."
+    },
+    "authors": [
+      "Aaron Bernal Huanca"
+    ],
+    "techStack": [
+      "Python",
+      "Persistent Homology",
+      "Takens Embeddings",
+      "FPS",
+      "Scikit-Learn"
+    ],
+    "visual": {
+      "mode": "image",
+      "src": "assets/projects/earthquake-detection-tda.png",
+      "proceduralType": "persistence-manifold",
+      "caption": {
+        "en": "General Architecture of the TDA Seismic Detection Pipeline",
+        "es": "Arquitectura General del Pipeline de Detección Sísmica con TDA"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Slides / Report (ES)",
+          "es": "Presentación (ES)"
+        },
+        "url": "https://github.com/aaronbernal28/seismic-signals-tda/blob/d74a5ec4fe2e2e662be0ae99d3c11190d8c37da9/Detecci%C3%B3n%20de%20terremotos%20mediante%20t%C3%A9cnicas%20de%20TDA%20-%20Google%20Slides.pdf",
+        "type": "report"
+      },
+      {
+        "label": {
+          "en": "Repository",
+          "es": "Repositorio"
+        },
+        "url": "https://github.com/aaronbernal28/seismic-signals-tda",
+        "type": "code"
+      }
+    ]
+  },
+  {
+    "id": "mobile-robot-ros2",
+    "category": "robotics",
+    "status": "completed",
+    "featured": false,
+    "isPublication": false,
+    "date": "2025-12",
+    "title": {
+      "en": "Autonomous Mobile Robotics with ROS 2 & CoppeliaSim",
+      "es": "Robótica Móvil Autónoma con ROS 2 y CoppeliaSim"
+    },
+    "description": {
+      "en": "C++ and ROS 2 implementations of differential-drive kinematics, odometry, sensor fusion, LiDAR obstacle avoidance, and autonomous navigation developed for the Mobile Robotics course at the Department of Computer Science, FCEyN-UBA.",
+      "es": "Implementaciones en C++ y ROS 2 de cinemática diferencial, odometría, fusión sensorial, evasión de obstáculos con LiDAR y navegación autónoma desarrolladas para Robótica Móvil en el Departamento de Computación (FCEyN-UBA)."
+    },
+    "authors": [
+      "Aaron Bernal Huanca"
+    ],
+    "techStack": [
+      "C++",
+      "ROS 2",
+      "CoppeliaSim",
+      "Docker",
+      "Kinematics & SLAM"
+    ],
+    "visual": {
+      "mode": "procedural",
+      "src": null,
+      "proceduralType": "robotics-lidar",
+      "caption": {
+        "en": "SE(2) Differential-Drive Trajectory & LiDAR Raycasting Scan",
+        "es": "Trayectoria Diferencial SE(2) y Escaneo de Rayos LiDAR"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Report",
+          "es": "Informe"
+        },
+        "url": "https://drive.google.com/file/d/17Z6ZtdvEgh5GuEkM2-QVsqTHUOvjFscX/view?usp=sharing",
+        "type": "report"
+      },
+      {
+        "label": {
+          "en": "Repository",
+          "es": "Repositorio"
+        },
+        "url": "https://github.com/aaronbernal28/mobile-robot-repo",
+        "type": "code"
+      }
+    ]
+  },
+  {
+    "id": "deepseek-r1-grpo-analysis",
+    "category": "ml-ai",
+    "status": "completed",
+    "featured": false,
+    "isPublication": false,
+    "date": "2025-11",
+    "title": {
+      "en": "Analysis of DeepSeek-R1: Reasoning in LLMs via GRPO Reinforcement Learning",
+      "es": "Análisis de DeepSeek-R1: Razonamiento en LLMs mediante Aprendizaje por Refuerzo (GRPO)"
+    },
+    "description": {
+      "en": "Examines the training architecture of DeepSeek-R1-Zero and DeepSeek-R1, focusing on Group Relative Policy Optimization (GRPO) to incentivize chain-of-thought reasoning without a critic value network. Analyzes emergent self-verification, length scaling, and STEM benchmark gains.",
+      "es": "Examina la arquitectura de entrenamiento de DeepSeek-R1-Zero y DeepSeek-R1, centrándose en Group Relative Policy Optimization (GRPO) para incentivar cadenas de razonamiento sin red crítica de valor. Analiza la autoverificación emergente y mejoras en tareas STEM."
+    },
+    "authors": [
+      "Aaron Bernal Huanca"
+    ],
+    "techStack": [
+      "Reinforcement Learning",
+      "GRPO",
+      "LLMs",
+      "Policy Gradient",
+      "STEM Reasoning"
+    ],
+    "visual": {
+      "mode": "procedural",
+      "src": null,
+      "proceduralType": "neural-flow",
+      "caption": {
+        "en": "Group Relative Policy Optimization (GRPO) Reasoning Trajectories",
+        "es": "Trayectorias de Razonamiento bajo Optimización de Políticas GRPO"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Poster (ES)",
+          "es": "Póster (ES)"
+        },
+        "url": "https://drive.google.com/file/d/1gAkHEbpspikI4UfdlTQnjVQkfw55lwFY/view?usp=sharing",
+        "type": "poster"
+      }
+    ]
+  },
+  {
+    "id": "data-topology-mapper-2025",
+    "category": "tda-signal",
+    "status": "completed",
+    "featured": false,
+    "isPublication": false,
+    "date": "2025-11",
+    "title": {
+      "en": "Topological Data Analysis: Mapper Algorithm & Projective Manifolds",
+      "es": "Análisis Topológico de Datos: Algoritmo Mapper y Variedades Proyectivas"
+    },
+    "description": {
+      "en": "Applies Topological Data Analysis (TDA) and the Mapper algorithm to high-dimensional text embeddings from the Argentine Boletín Oficial and non-orientable projective plane point clouds, extracting nerve simplicial complexes and persistent homology invariants.",
+      "es": "Aplica Análisis Topológico de Datos (TDA) y el algoritmo Mapper a embeddings de texto del Boletín Oficial de la República Argentina y variedades del plano proyectivo, construyendo complejos simpliciales y homología persistente."
+    },
+    "authors": [
+      "Aaron Bernal Huanca"
+    ],
+    "techStack": [
+      "Python",
+      "Mapper Algorithm",
+      "Simplicial Complexes",
+      "Persistent Homology",
+      "NLP Embeddings"
+    ],
+    "visual": {
+      "mode": "procedural",
+      "src": null,
+      "proceduralType": "persistence-manifold",
+      "caption": {
+        "en": "Mapper Simplicial Nerve Complex & Persistent Homology",
+        "es": "Complejo Simplicial Nervio de Mapper y Homología Persistente"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Repository",
+          "es": "Repositorio"
+        },
+        "url": "https://github.com/aaronbernal28/DataTopology-2025",
+        "type": "code"
+      }
+    ]
+  },
+  {
+    "id": "intro-reinforcement-learning",
+    "category": "ml-ai",
+    "status": "completed",
+    "featured": false,
+    "isPublication": false,
+    "date": "2025-11",
+    "title": {
+      "en": "Markov Decision Processes & Tabular Reinforcement Learning",
+      "es": "Procesos de Decisión de Markov y Aprendizaje por Refuerzo Tabular"
+    },
+    "description": {
+      "en": "Complete Python implementations and theoretical analysis of Markov Decision Process (MDP) dynamic programming solvers, Temporal-Difference TD(0), on-policy SARSA, and off-policy Q-Learning across stochastic GridWorld environments.",
+      "es": "Implementaciones completas en Python y análisis teórico de programación dinámica en Procesos de Decisión de Markov (MDP), aprendizaje por diferencias temporales TD(0), SARSA (on-policy) y Q-Learning (off-policy)."
+    },
+    "authors": [
+      "Aaron Bernal Huanca"
+    ],
+    "techStack": [
+      "Python",
+      "Reinforcement Learning",
+      "MDP",
+      "SARSA / Q-Learning",
+      "TD(0)"
+    ],
+    "visual": {
+      "mode": "procedural",
+      "src": null,
+      "proceduralType": "neural-flow",
+      "caption": {
+        "en": "Bellman Optimality Backup & Policy Convergence Flow",
+        "es": "Operador de Optimalidad de Bellman y Convergencia de Políticas"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Repository",
+          "es": "Repositorio"
+        },
+        "url": "https://github.com/aaronbernal28/Introduction-to-reinforcement-learning",
+        "type": "code"
+      }
+    ]
+  },
+  {
+    "id": "shelf-selection-mcf-cpp",
+    "category": "optimization",
+    "status": "completed",
+    "featured": false,
+    "isPublication": false,
+    "date": "2025-11",
+    "title": {
+      "en": "Shelf-Selection-MCF: C++17 Minimum Cost Flow Engine for Warehouse Logistics",
+      "es": "Shelf-Selection-MCF: Motor C++17 de Flujo de Costo Mínimo para Logística de Almacenes"
+    },
+    "description": {
+      "en": "High-performance C++17 implementation of a Warehouse Management & Execution System (WMS/WES) solving the robotic rack selection problem via Minimum Cost Flow (MCF) algorithms, integrated with PostgreSQL (libpqxx) and JSON backlog streaming.",
+      "es": "Implementación de alto rendimiento en C++17 de un sistema WMS/WES que resuelve la selección de estanterías robotizadas mediante algoritmos de Flujo de Costo Mínimo (MCF), integrado con PostgreSQL (libpqxx) y CMake."
+    },
+    "authors": [
+      "Aaron Bernal Huanca"
+    ],
+    "techStack": [
+      "C++17",
+      "Min-Cost Flow",
+      "PostgreSQL (libpqxx)",
+      "CMake",
+      "WES / WMS"
+    ],
+    "visual": {
+      "mode": "procedural",
+      "src": null,
+      "proceduralType": "mincost-grid",
+      "caption": {
+        "en": "Minimum-Cost Network Flow & Rack Assignment Graph",
+        "es": "Red de Flujo de Costo Mínimo y Grafo de Asignación de Estanterías"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Repository",
+          "es": "Repositorio"
+        },
+        "url": "https://github.com/aaronbernal28/Shelf-Selection-MCF",
+        "type": "code"
+      }
+    ]
+  },
+  {
+    "id": "shelf-selection-wes",
+    "category": "optimization",
+    "status": "completed",
+    "featured": true,
+    "isPublication": false,
+    "date": "2025-10",
+    "title": {
+      "en": "Shelf Selection Optimization in Warehouse Execution Systems (WES)",
+      "es": "Optimización de Selección de Estanterías en Sistemas de Ejecución de Almacenes (WES)"
+    },
+    "description": {
+      "en": "Optimization engine for the Shelf Selection (SS) module in automated robotic warehouses. Minimizes robot movements and maximizes pick density per rack face across five phases: formal modeling, EDA, software architecture, a max-heap greedy heuristic satisfying strict real-time latency constraints, and performance evaluation.",
+      "es": "Sistema de optimización para el módulo Shelf Selection (SS) en almacenes robotizados. Minimiza movimientos de robots y maximiza la densidad de picking por cara de rack mediante una heurística golosa basada en max-heap que satisface restricciones temporales estrictas."
+    },
+    "authors": [
+      "Santiago Oviedo",
+      "Matías Federico",
+      "Aaron Bernal Huanca"
+    ],
+    "techStack": [
+      "Python",
+      "Max-Heap Heuristics",
+      "Combinatorial Optimization",
+      "WES Logistics",
+      "Simulation"
+    ],
+    "visual": {
+      "mode": "image",
+      "src": "assets/projects/shelf-selection-wes.png",
+      "proceduralType": "mincost-grid",
+      "caption": {
+        "en": "Figure 8: Movement Costs by Rack Type (Optimization Convergence and Distributions)",
+        "es": "Figura 8: Costos de Movimiento por tipo de Rack. A la izquierda: la evolución de Costo segmentado por tipo de Rack a lo largo de las iteraciones. A la derecha: la distribución por tipo de Rack mediante boxplots."
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Report (ES)",
+          "es": "Informe (ES)"
+        },
+        "url": "https://drive.google.com/file/d/1fyB_jKDagcQMd1yvfySzRZ-5TkgA5OKy/view?usp=sharing",
+        "type": "report"
+      },
+      {
+        "label": {
+          "en": "Repository (Shellect)",
+          "es": "Repositorio (Shellect)"
+        },
+        "url": "https://github.com/aaronbernal28/Shellect",
+        "type": "code"
+      }
+    ]
+  },
+  {
+    "id": "lunfardo-translator-nlp",
+    "category": "ml-ai",
+    "status": "completed",
+    "featured": false,
+    "isPublication": false,
+    "date": "2025-09",
+    "title": {
+      "en": "Lunfardo Neural Sequence Translator & Subword Language Modeling",
+      "es": "Traductor Neuronal de Lunfardo y Modelado de Lenguaje Sub-léxico"
+    },
+    "description": {
+      "en": "Encoder-decoder Transformer sequence translation pipeline for Rioplatense Lunfardo slang. Features custom subword vocabulary construction, synthetic corpus scaling (1K to 1M samples), and hyperparameter ablation tracking validation perplexity and cross-entropy loss.",
+      "es": "Pipeline de traducción neuronal secuencia a secuencia (Transformer) para Lunfardo rioplatense. Incluye construcción de vocabulario sub-léxico propio, generación sintética de corpus (1K a 1M de muestras) y evaluación de perplejidad."
+    },
+    "authors": [
+      "Aaron Bernal Huanca"
+    ],
+    "techStack": [
+      "Python",
+      "PyTorch",
+      "Transformers",
+      "Subword Tokenization",
+      "NLP"
+    ],
+    "visual": {
+      "mode": "image",
+      "src": "assets/projects/lunfardo-translator-nlp.png",
+      "proceduralType": "neural-flow",
+      "caption": {
+        "en": "Transformer Training & Validation Cross-Entropy Loss Convergence",
+        "es": "Convergencia de Pérdida de Entrenamiento y Validación del Transformer"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Repository",
+          "es": "Repositorio"
+        },
+        "url": "https://github.com/aaronbernal28/lunfardo-translator",
+        "type": "code"
+      }
+    ]
+  },
+  {
+    "id": "logistic-data-opt",
+    "category": "optimization",
+    "status": "completed",
+    "featured": false,
+    "isPublication": false,
+    "date": "2025-09",
+    "title": {
+      "en": "Applied Logistics Distribution & Vehicle Routing Optimization",
+      "es": "Optimización Aplicada a la Distribución Logística y Ruteo"
+    },
+    "description": {
+      "en": "Mathematical programming models for logistics network design, facility location, and capacitated vehicle routing implemented in Python using PySCIPOpt (SCIP) and Google OR-Tools.",
+      "es": "Modelos de programación matemática entera mixta (MILP) para diseño de redes logísticas, localización de instalaciones y ruteo de vehículos implementados con PySCIPOpt y Google OR-Tools."
+    },
+    "authors": [
+      "Aaron Bernal Huanca"
+    ],
+    "techStack": [
+      "Python",
+      "PySCIPOpt",
+      "Google OR-Tools",
+      "MILP",
+      "Logistics"
+    ],
+    "visual": {
+      "mode": "procedural",
+      "src": null,
+      "proceduralType": "mincost-grid",
+      "caption": {
+        "en": "Mixed-Integer Linear Programming (MILP) Distribution Network",
+        "es": "Red de Distribución mediante Programación Lineal Entera Mixta (MILP)"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Repository",
+          "es": "Repositorio"
+        },
+        "url": "https://github.com/aaronbernal28/LogisticDataOpt",
+        "type": "code"
+      }
+    ]
+  },
+  {
+    "id": "spatial-statistics-2025",
+    "category": "stats-bio",
+    "status": "completed",
+    "featured": false,
+    "isPublication": false,
+    "date": "2025-09",
+    "title": {
+      "en": "Spatial Statistics, Variograms & Geostatistical Kriging",
+      "es": "Estadística Espacial, Variogramas y Kriging Geoestadístico"
+    },
+    "description": {
+      "en": "Geostatistical analysis, spatial point processes, empirical variogram estimation, and Gaussian process spatial interpolation (Kriging) with stochastic simulation workflows.",
+      "es": "Análisis geoestadístico, procesos puntuales espaciales, estimación de variogramas empíricos e interpolación espacial mediante procesos gaussianos (Kriging) y simulación estocástica."
+    },
+    "authors": [
+      "Aaron Bernal Huanca"
+    ],
+    "techStack": [
+      "Python",
+      "Spatial Statistics",
+      "Kriging",
+      "Gaussian Processes",
+      "Variograms"
+    ],
+    "visual": {
+      "mode": "procedural",
+      "src": null,
+      "proceduralType": "causal-density",
+      "caption": {
+        "en": "Spatial Covariance Kernel & Kriging Posterior Variance",
+        "es": "Núcleo de Covarianza Espacial y Varianza Posterior de Kriging"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Repository",
+          "es": "Repositorio"
+        },
+        "url": "https://github.com/aaronbernal28/spatial-statistics-2025",
+        "type": "code"
+      }
+    ]
+  },
+  {
+    "id": "deep-music-genre-classifier",
+    "category": "tda-signal",
+    "status": "completed",
+    "featured": false,
+    "isPublication": false,
+    "date": "2025-08",
+    "title": {
+      "en": "DeepMusicGenreClassifier: Audio Spectrograms & Transfer Learning",
+      "es": "DeepMusicGenreClassifier: Espectrogramas de Audio y Transfer Learning"
+    },
+    "description": {
+      "en": "Musical genre classification on the GTZAN dataset (10 genres, 30s tracks) comparing recurrent architectures (RNNs), 1D-CNNs over Mel, MFCC, and CQT spectrograms, and self-supervised audio foundation models (Wav2Vec2 and EnCodecMAE) evaluated via cross-entropy and multi-class accuracy.",
+      "es": "Clasificación de géneros musicales en el dataset GTZAN (10 géneros) comparando redes recurrentes (RNNs), CNNs 1D sobre espectrogramas Mel, MFCC y CQT, y modelos pre-entrenados de representación de audio (Wav2Vec2 y EnCodecMAE)."
+    },
+    "authors": [
+      "Aaron Bernal Huanca"
+    ],
+    "techStack": [
+      "PyTorch",
+      "Wav2Vec2",
+      "EnCodecMAE",
+      "Spectrograms (Mel/CQT)",
+      "1D-CNN / RNN"
+    ],
+    "visual": {
+      "mode": "image",
+      "src": "assets/projects/music-spectrograms.png",
+      "proceduralType": "persistence-manifold",
+      "caption": {
+        "en": "Mel Spectrogram, Constant-Q Transform (CQT), MFCC, Wav2Vec2 & EnCodecMAE Features",
+        "es": "Espectrograma Mel, Transformada CQT, MFCC, Wav2Vec2 y EnCodecMAE"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Report (EN)",
+          "es": "Informe (EN)"
+        },
+        "url": "https://drive.google.com/file/d/1XE_I1uaKtk1UVR3KdBVfysUpUKZOANTS/view?usp=sharing",
+        "type": "report"
+      },
+      {
+        "label": {
+          "en": "Report (ES)",
+          "es": "Informe (ES)"
+        },
+        "url": "https://github.com/aaronbernal28/DeepMusicGenreClassifier/blob/7a93485d191dd292acc010750424d847092432f1/Informe_PSAH_bernal.pdf",
+        "type": "report"
+      },
+      {
+        "label": {
+          "en": "Repository",
+          "es": "Repositorio"
+        },
+        "url": "https://github.com/aaronbernal28/DeepMusicGenreClassifier",
+        "type": "code"
+      }
+    ]
+  },
+  {
+    "id": "mixed-models-causal-inference",
+    "category": "stats-bio",
+    "status": "completed",
+    "featured": false,
+    "isPublication": false,
+    "date": "2025-07",
+    "title": {
+      "en": "Mixed-Effects Models, Penalized Splines & Causal Inference (DAGs)",
+      "es": "Modelos de Efectos Mixtos, Splines Penalizados e Inferencia Causal (DAGs)"
+    },
+    "description": {
+      "en": "Statistical modeling of 4,000 streaming platform movies and series to predict IMDb ratings. Combines hierarchical mixed-effects models, non-parametric penalized splines, explicit causal DAG identification for confounder adjustment, and predictive benchmarking.",
+      "es": "Modelado estadístico de 4.000 películas y series para predecir calificaciones en IMDb. Combina modelos jerárquicos de efectos mixtos, splines penalizados, inferencia causal mediante DAGs para ajuste de confundidores y comparación predictiva."
+    },
+    "authors": [
+      "Aaron Bernal Huanca",
+      "Casiel Joshua Estrago",
+      "Ramiro Lipszyc"
+    ],
+    "techStack": [
+      "R",
+      "Mixed-Effects Models",
+      "Causal DAGs",
+      "Penalized Splines",
+      "GLM"
+    ],
+    "visual": {
+      "mode": "procedural",
+      "src": null,
+      "proceduralType": "causal-density",
+      "caption": {
+        "en": "Causal DAG Structure & Hierarchical Spline Density",
+        "es": "Estructura de DAG Causal y Densidad Jerárquica con Splines"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Report (ES)",
+          "es": "Informe (ES)"
+        },
+        "url": "https://drive.google.com/file/d/1sKW0xbrYGKWCmO8RBLMDTKkwiYOML2DI/view?usp=sharing",
+        "type": "report"
+      }
+    ]
+  },
+  {
+    "id": "diffusion-models-physics-jets",
+    "category": "ml-ai",
+    "status": "completed",
+    "featured": false,
+    "isPublication": false,
+    "date": "2025-07",
+    "title": {
+      "en": "Generative Diffusion Models for Particle Physics Jets & Predictive ML",
+      "es": "Modelos Generativos de Difusión para Jets de Física de Partículas y ML Predictivo"
+    },
+    "description": {
+      "en": "Explores generative score-based diffusion models trained on high-energy physics particle jet showers alongside NLP description-based rating predictors and ensemble classification benchmarks.",
+      "es": "Explora modelos generativos de difusión entrenados sobre lluvias de jets en física de partículas de altas energías, junto con modelos predictivos basados en texto y aprendizaje automático supervisado."
+    },
+    "authors": [
+      "Aaron Bernal Huanca"
+    ],
+    "techStack": [
+      "PyTorch",
+      "Diffusion Models",
+      "Generative AI",
+      "Particle Physics Jets",
+      "Scikit-Learn"
+    ],
+    "visual": {
+      "mode": "procedural",
+      "src": null,
+      "proceduralType": "neural-flow",
+      "caption": {
+        "en": "Reverse Stochastic Differential Equation (SDE) Denoising Trajectory",
+        "es": "Trayectoria de Desruido mediante Ecuaciones Diferenciales Estocásticas"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Repository",
+          "es": "Repositorio"
+        },
+        "url": "https://github.com/aaronbernal28/Aprendizaje-Automatico-1",
+        "type": "code"
+      }
+    ]
+  },
+  {
+    "id": "neural-network-architectures-numpy",
+    "category": "ml-ai",
+    "status": "completed",
+    "featured": false,
+    "isPublication": false,
+    "date": "2025-07",
+    "title": {
+      "en": "Mathematical Foundations of Deep Learning Architectures in Pure NumPy",
+      "es": "Fundamentos Matemáticos de Arquitecturas de Aprendizaje Profundo en NumPy"
+    },
+    "description": {
+      "en": "From-scratch NumPy implementations of deep neural network architectures, backpropagation Jacobians, and optimization dynamics based on O. Calin's \"Deep Learning Architectures: A Mathematical Approach\" (Department of Mathematics, FCEyN-UBA).",
+      "es": "Implementaciones desde cero en NumPy puro de arquitecturas de redes profundas, jacobianos de retropropagación y dinámica de optimización basadas en el libro de O. Calin (Departamento de Matemática, FCEyN-UBA)."
+    },
+    "authors": [
+      "Aaron Bernal Huanca"
+    ],
+    "techStack": [
+      "Python",
+      "NumPy",
+      "Matrix Calculus",
+      "Backpropagation",
+      "Deep Learning Theory"
+    ],
+    "visual": {
+      "mode": "procedural",
+      "src": null,
+      "proceduralType": "neural-flow",
+      "caption": {
+        "en": "Exact Jacobian Backpropagation & Layer-Wise Tensor Flow",
+        "es": "Retropropagación Exacta de Jacobianos y Flujo Tensorial por Capas"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Repository",
+          "es": "Repositorio"
+        },
+        "url": "https://github.com/aaronbernal28/Neural_network_architectures",
+        "type": "code"
+      }
+    ]
+  },
+  {
+    "id": "gene-expression-oncology",
+    "category": "stats-bio",
+    "status": "completed",
+    "featured": false,
+    "isPublication": false,
+    "date": "2025-05",
+    "title": {
+      "en": "Oncological Prognosis via RNA Gene Expression Classification",
+      "es": "Pronóstico Oncológico mediante Clasificación de Expresión Génica de ARN"
+    },
+    "description": {
+      "en": "Interdisciplinary bioinformatics study with CONICET analyzing 500 RNA expression profiles across 200 genes from pre-tumoral hyperplasia lesions. Trains and validates machine learning classifiers to predict relapse risk and patient prognosis.",
+      "es": "Estudio interdisciplinario con investigadores del CONICET analizando 500 muestras de ARN de 200 genes en lesiones pre-tumorales. Entrena y valida clasificadores de aprendizaje automático para predecir riesgo de recaída y pronóstico oncológico."
+    },
+    "authors": [
+      "Manuel Fernandez Burda",
+      "Santiago Nahuel Eliges",
+      "Giancarlo Moroni",
+      "Nicolas Spisso",
+      "Aaron Bernal Huanca"
+    ],
+    "techStack": [
+      "Bioinformatics",
+      "RNA-Seq",
+      "Scikit-Learn",
+      "Feature Selection",
+      "CONICET"
+    ],
+    "visual": {
+      "mode": "procedural",
+      "src": null,
+      "proceduralType": "causal-density",
+      "caption": {
+        "en": "RNA Expression Differential Profile & Prognosis Separation",
+        "es": "Perfil Diferencial de Expresión de ARN y Separación Pronóstica"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Report (ES)",
+          "es": "Informe (ES)"
+        },
+        "url": "https://drive.google.com/file/d/1o3kq4J8i0jMBt8mDWLyuVQ5VTc-W795W/view?usp=sharing",
+        "type": "report"
+      }
+    ]
+  },
+  {
+    "id": "sign-language-mnist",
+    "category": "ml-ai",
+    "status": "completed",
+    "featured": false,
+    "isPublication": false,
+    "date": "2025-04",
+    "title": {
+      "en": "Sign Language MNIST Multi-Class Vision Classification",
+      "es": "Clasificación Visual Multiclase en Sign Language MNIST"
+    },
+    "description": {
+      "en": "Systematic comparison of Decision Trees, Random Forests, K-Nearest Neighbors, and Support Vector Machines (SVM) on the Sign Language MNIST dataset, analyzing the bias-variance trade-off via k-fold cross-validation and confusion matrices.",
+      "es": "Comparación sistemática de Árboles de Decisión, Random Forest, KNN y Support Vector Machines (SVM) sobre el dataset Sign Language MNIST, analizando el compromiso sesgo-varianza mediante validación cruzada y matrices de confusión."
+    },
+    "authors": [
+      "Aaron Bernal Huanca"
+    ],
+    "techStack": [
+      "Python",
+      "SVM",
+      "Random Forest",
+      "Computer Vision",
+      "Cross-Validation"
+    ],
+    "visual": {
+      "mode": "procedural",
+      "src": null,
+      "proceduralType": "neural-flow",
+      "caption": {
+        "en": "Multi-Class Feature Space & Decision Boundary Projection",
+        "es": "Espacio de Características Multiclase y Proyección de Fronteras"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Kaggle Notebook",
+          "es": "Notebook en Kaggle"
+        },
+        "url": "https://www.kaggle.com/code/aarnbernal/sign-language-mnist",
+        "type": "notebook"
+      }
+    ]
+  },
+  {
+    "id": "internet-auction-us-schools",
+    "category": "optimization",
+    "status": "completed",
+    "featured": false,
+    "isPublication": false,
+    "date": "2024-12",
+    "title": {
+      "en": "Multi-Item Procurement Auction with Quantity Discounts (LP)",
+      "es": "Subasta Multicriterio con Descuentos por Cantidad en Escuelas de EE.UU. (PL)"
+    },
+    "description": {
+      "en": "Python linear programming implementation of the paper 'An asymmetric multi-item auction with quantity discounts applied to Internet service procurement in Buenos Aires public schools', scaled to 91,063 US public schools across six competing telecom providers.",
+      "es": "Implementación en programación lineal del modelo 'An asymmetric multi-item auction with quantity discounts applied to Internet service procurement', escalado a 91.063 escuelas públicas de EE.UU. con descuentos por volumen."
+    },
+    "authors": [
+      "Aaron Bernal Huanca"
+    ],
+    "techStack": [
+      "Python",
+      "Linear Programming",
+      "Auction Theory",
+      "Operations Research"
+    ],
+    "visual": {
+      "mode": "procedural",
+      "src": null,
+      "proceduralType": "mincost-grid",
+      "caption": {
+        "en": "Multi-Item Allocation & Quantity Discount Cost Frontier",
+        "es": "Asignación Multicriterio y Frontera de Costos por Volumen"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Kaggle Notebook",
+          "es": "Notebook en Kaggle"
+        },
+        "url": "https://www.kaggle.com/code/aarnbernal/internet-auction-in-us-schools",
+        "type": "notebook"
+      }
+    ]
+  },
+  {
+    "id": "wilcoxon-s3-bootstrap",
+    "category": "stats-bio",
+    "status": "completed",
+    "featured": false,
+    "isPublication": false,
+    "date": "2024-12",
+    "title": {
+      "en": "Nonparametric Wilcoxon Signed-Rank Test & Bootstrap Power in R",
+      "es": "Test No Paramétrico de Rangos con Signo de Wilcoxon y Potencia Bootstrap en R"
+    },
+    "description": {
+      "en": "Clean-room implementation of the Wilcoxon signed-rank test in R's S3 object-oriented system compatible with native wilcox.test. Derives exact combinatorial and asymptotic distributions, dynamic programming computation for large samples, and Monte Carlo bootstrap power estimation.",
+      "es": "Implementación del test de rangos con signo de Wilcoxon en el sistema orientado a objetos S3 de R compatible con wilcox.test. Incluye distribuciones exacta y asintótica, cálculo eficiente para muestras grandes y estimación de potencia vía bootstrap."
+    },
+    "authors": [
+      "Aaron Bernal Huanca",
+      "Nicolas Spisso",
+      "Marina Badaracco"
+    ],
+    "techStack": [
+      "R",
+      "S3 OOP",
+      "Nonparametric Statistics",
+      "Bootstrap",
+      "Hypothesis Testing"
+    ],
+    "visual": {
+      "mode": "procedural",
+      "src": null,
+      "proceduralType": "causal-density",
+      "caption": {
+        "en": "Exact vs. Asymptotic Null Distribution & Bootstrap Power Curve",
+        "es": "Distribución Exacta vs. Asintótica y Curva de Potencia Bootstrap"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Report (ES)",
+          "es": "Informe (ES)"
+        },
+        "url": "https://drive.google.com/file/d/1mNRLZLcxYUR-iNTL-R0HPEitANBQtkPC/view?usp=sharing",
+        "type": "report"
+      },
+      {
+        "label": {
+          "en": "Statement (ES)",
+          "es": "Enunciado (ES)"
+        },
+        "url": "https://drive.google.com/file/d/1zC2OzRBSgIApm09ChP9tCHJvfGvjtaqh/view?usp=sharing",
+        "type": "doc"
+      }
+    ]
+  }
+]

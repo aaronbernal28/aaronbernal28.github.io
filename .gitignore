@@ -1,0 +1,25 @@
+# Plan v1 (Archived)
+plan_v1.md
+
+# Private Research Artifacts & Temp Documents (Never upload to public repo)
+projects/_Tesis_*.pdf
+projects/*:Zone.Identifier
+*:Zone.Identifier
+*.Zone.Identifier
+
+# Agent & Local Customizations (Never upload to public repo)
+.agents/
+.agent/
+_agents/
+_agent/
+
+# Python / Tooling
+__pycache__/
+*.py[cod]
+.venv/
+.uv/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.swp

@@ -1,0 +1,93 @@
+{
+  "name": "Aaron Bernal Huanca",
+  "handle": "aaronbernal28",
+  "avatar": "https://avatars.githubusercontent.com/u/130618059?v=4",
+  "headline": {
+    "en": "Data Science & Complex Networks Researcher",
+    "es": "Investigador en Ciencia de Datos y Redes Complejas"
+  },
+  "subheadline": {
+    "en": "Licenciatura in Data Science @ FCEyN-UBA · Thesis Finalized Aug 2026 (1 Final Exam Pending)",
+    "es": "Licenciatura en Ciencias de Datos @ FCEyN-UBA · Tesis Finalizada Ago 2026 (1 Final Pendiente)"
+  },
+  "bio": {
+    "en": "Data Scientist and researcher at Universidad de Buenos Aires specializing in complex network analysis, machine learning, topological data analysis, and mathematical optimization. Passionate about probability theory, statistical modeling, and high-performance scientific computing.",
+    "es": "Científico de Datos e investigador en la Universidad de Buenos Aires especializado en análisis de redes complejas, aprendizaje automático, análisis topológico de datos y optimización matemática. Apasionado por la teoría de probabilidades, el modelado estadístico y la computación científica."
+  },
+  "statusBadge": {
+    "en": "Thesis Finalized (Aug 2026) · 1 Exam to Graduate",
+    "es": "Tesis Finalizada (Ago 2026) · A 1 Final de Graduarse"
+  },
+  "socials": [
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/aaronbernal28/"
+    },
+    {
+      "id": "github",
+      "label": "GitHub",
+      "url": "https://github.com/aaronbernal28"
+    },
+    {
+      "id": "orcid",
+      "label": "ORCID",
+      "url": "https://orcid.org/0009-0005-9674-5414"
+    },
+    {
+      "id": "email",
+      "label": "ahuanca@dc.uba.ar",
+      "url": "mailto:ahuanca@dc.uba.ar"
+    }
+  ],
+  "techBento": [
+    {
+      "group": {
+        "en": "Languages & Pipelines",
+        "es": "Lenguajes y Pipelines"
+      },
+      "skills": ["Python", "R", "C++17", "SQL", "Snakemake", "Bash"]
+    },
+    {
+      "group": {
+        "en": "ML, Networks & TDA",
+        "es": "ML, Redes y TDA"
+      },
+      "skills": ["PyTorch", "Scikit-Learn", "NetworkX", "Leiden / Infomap", "Persistent Homology", "NumPy"]
+    },
+    {
+      "group": {
+        "en": "Optimization & Systems",
+        "es": "Optimización y Sistemas"
+      },
+      "skills": ["OR-Tools", "PySCIPOpt", "ROS 2", "PostgreSQL", "Docker", "Git"]
+    }
+  ],
+  "timeline": [
+    {
+      "period": {
+        "en": "2021 — 2026",
+        "es": "2021 — 2026"
+      },
+      "role": {
+        "en": "Licenciatura en Ciencias de Datos (5-year Argentine degree, equivalent to B.Sc. + thesis)",
+        "es": "Licenciatura en Ciencias de Datos"
+      },
+      "organization": "Facultad de Ciencias Exactas y Naturales (FCEyN) — Universidad de Buenos Aires",
+      "badges": ["Thesis Finalized Aug 2026", "1 Final Exam Pending"],
+      "description": {
+        "en": "Licenciatura Thesis finalized in August 2026 (author of the thesis and co-author of research at JAIIO-ASAID 2026 on occupational networks); 1 final exam pending to graduate. Comprehensive curriculum in statistical modeling, network science, causal inference, machine learning, topological data analysis (TDA), and combinatorial optimization.",
+        "es": "Tesis de Licenciatura finalizada en agosto de 2026 (autor de la tesis y coautor de investigación en JAIIO-ASAID 2026 sobre redes ocupacionales); 1 examen final pendiente para graduarse. Formación integral en modelado estadístico, ciencia de redes, inferencia causal, aprendizaje automático, análisis topológico de datos (TDA) y optimización combinatoria."
+      }
+    }
+  ],
+  "categories": [
+    { "id": "all", "en": "All Work", "es": "Todo" },
+    { "id": "networks", "en": "Network Science", "es": "Ciencia de Redes" },
+    { "id": "ml-ai", "en": "ML, DL & RL", "es": "ML, DL y RL" },
+    { "id": "optimization", "en": "Optimization & OR", "es": "Optimización e IO" },
+    { "id": "tda-signal", "en": "TDA & Audio/Signal", "es": "TDA y Señales" },
+    { "id": "stats-bio", "en": "Statistics & Bio", "es": "Estadística y Bio" },
+    { "id": "robotics", "en": "Robotics & C++", "es": "Robótica y C++" }
+  ]
+}
